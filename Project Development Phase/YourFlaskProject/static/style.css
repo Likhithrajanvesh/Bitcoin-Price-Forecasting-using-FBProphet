@@ -1,0 +1,91 @@
+/* static/style.css */
+
+body {
+    /* Set the background image and cover the entire viewport */
+    background-image: url('bitcoin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(35, 35, 35, 0.9); /* Dark violet background color with dimming */
+    /* Add additional styling if needed */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text color */
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /* Add an outline and set opacity for the header */
+    outline: 2px solid #5E35B1; /* Violet outline color */
+    background-color: rgba(53, 45, 69, 0.8); /* Slightly opaque violet background color */
+}
+
+.main-content-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    outline: 2px solid rgb(173, 177, 53); /* Violet outline color */
+    background-color: rgba(30, 27, 27, 0.9); /* White box with dimming */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+section#team {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.team-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(50, 42, 42, 0.5); /* White box with dimming */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+    max-width: 120px;
+    flex-grow: 1; /* Allow the items to grow and take available space */
+}
+
+.team-member img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.prediction-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #5E35B1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #5E35B1;
+    transition: background-color 0.3s ease;
+}
+
+.prediction-button:hover {
+    background-color: #311B92;
+}
+
+.bitcoin-info {
+    text-align: justify;
+}
+
+.center {
+    text-align: center;
+}

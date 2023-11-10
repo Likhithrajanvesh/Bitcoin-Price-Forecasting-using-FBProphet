@@ -1,0 +1,67 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Prediction Project with Prophet</title>
+    <!-- Change the link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Bitcoin Prediction Project with Prophet</h1>
+        <p>Explore Bitcoin price predictions based on historical data using Facebook Prophet.</p>
+    </header>
+
+    <div class="main-content-box">
+        <p class="bitcoin-info">
+            Bitcoin is a decentralized digital currency that allows peer-to-peer transactions without the need for an intermediary.
+            It offers advantages such as security, transparency, and global accessibility, but it also comes with risks like price volatility.
+            Utilizing the power of Prophet, our project aims to provide insights into Bitcoin price trends.
+        </p>
+    
+        <p class="forecasting-info">
+            Time series forecasting plays a crucial role in predicting future trends based on historical data. One powerful tool for such forecasting tasks is Facebook Prophet.
+            Developed by Facebook, Prophet is designed to handle time series data and has proven to be effective in capturing patterns, holidays, and seasonality.
+            Its simplicity and ability to handle missing data make it an ideal choice for predicting Bitcoin prices.
+            Explore our predictions below to see how Prophet can help in anticipating the future values of Bitcoin.
+        </p>
+    
+        <!-- Change the link to the prediction page and add centering class -->
+        <a href="{{ url_for('prediction') }}" class="prediction-button center">Go to Prediction Page</a>
+    </div>
+
+    <section id="team">
+        <div class="team-box">
+            <div class="team-title">
+                <h2>Our Team</h2>
+            </div>
+            <div class="team-member">
+                <!-- Change the path to the image -->
+                <img src="{{ url_for('static', filename='lohith.jpg') }}" alt="Lohith Bheemisetty">
+                <p>Lohith Bheemisetty</p>
+            </div>
+
+            <div class="team-member">
+                <!-- Change the path to the image -->
+                <img src="{{ url_for('static', filename='bulle.jpg') }}" alt="Bulle Likhith Raj Anvesh">
+                <p>Bulle Likhith Raj Anvesh</p>
+            </div>
+
+            <div class="team-member">
+                <!-- Change the path to the image -->
+                <img src="{{ url_for('static', filename='sathvik.jpg') }}" alt="J Surya Sathvik">
+                <p>J Surya Sathvik</p>
+            </div>
+
+            <div class="team-member">
+                <!-- Change the path to the image -->
+                <img src="{{ url_for('static', filename='sidhu.jpg') }}" alt="C Rohan Siddharth">
+                <p>C Rohan Siddharth</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
